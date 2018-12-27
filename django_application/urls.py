@@ -9,6 +9,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('drogo/', include('drogo.urls')),
     path('accounts/', include('accounts.urls')),
+    path('email_account/', include('email_account.urls', namespace='email_account')),
     path('', drogo_views.article_list, name='home')
 ]
 
